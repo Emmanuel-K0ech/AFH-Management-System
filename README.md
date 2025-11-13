@@ -1,3 +1,5 @@
+
+```markdown
 # 🏠 Adult Home Management System
 
 ## 📘 Overview
@@ -60,18 +62,22 @@ The Adult Home Management System provides a **centralized digital platform** to 
 ---
 
 ## 🧩 Project Structure
+```
+
 adult_home_mgmt/
 │
-├── adult_home_mgmt/ # Project configuration files
-├── residents/ # Resident management (records, incidents)
-├── staff/ # Employee management & payroll
-├── inventory/ # Medicine & supply tracking
-├── events/ # Calendar and scheduling
+├── adult_home_mgmt/       # Project configuration files
+├── residents/              # Resident management (records, incidents)
+├── staff/                  # Employee management & payroll
+├── inventory/              # Medicine & supply tracking
+├── events/                 # Calendar and scheduling
 │
-├── templates/ # Shared templates
-├── static/ # CSS, JS, images
-├── db.sqlite3 # Local development database
-└── manage.py # Django management script
+├── templates/              # Shared templates
+├── static/                 # CSS, JS, images
+├── db.sqlite3              # Local development database
+└── manage.py               # Django management script
+
+````
 
 ---
 
@@ -81,102 +87,127 @@ adult_home_mgmt/
 ```bash
 git clone https://github.com/Emmanuel-K0ech/adult-home-mgmt.git
 cd adult-home-mgmt
+````
 
-2. Create and activate virtual environment
+### 2️⃣ Create and activate a virtual environment
+
+```bash
 python3 -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
 
-3. Install Dependancies
+### 3️⃣ Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4. Run migrations
+### 4️⃣ Run migrations
+
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
-5. Start Development server
+### 5️⃣ Start the development server
+
+```bash
 python manage.py runserver
+```
 
-visit Visit http://127.0.0.1:8000 in your browser 🚀
+Visit `http://127.0.0.1:8000` in your browser 🚀
 
-🧩 Example Features to Test
+---
 
-Add Resident: Enter name, room number, and medical info.
+## 🧩 Example Features to Test
 
-Log Vital Signs: Record daily vitals.
+* **Add Resident:** Enter name, room number, and medical info.
+* **Log Vital Signs:** Record daily vitals.
+* **Add Event:** Schedule staff meetings or medication reminders.
+* **Inventory Alert:** See low-stock medicine notifications.
+* **Payroll Summary:** Check computed salary from workdays × rate.
 
-Add Event: Schedule staff meetings or medication reminders.
+---
 
-Inventory Alert: See low-stock medicine notifications.
+## 🔒 Security Considerations
 
-Payroll Summary: Check computed salary from workdays × rate.
+* Role-based access for Admin, Caregiver, and Employer
+* Encrypted user passwords (Django auth system)
+* Future upgrades: SSL, user activity logs, and audit trails
 
-🔒 Security Considerations
+---
 
-Role-based access for Admin, Caregiver, and Employer
+## 🧰 Future Enhancements
 
-Encrypted user passwords (Django auth system)
+* Integration with **Django REST Framework** for mobile access
+* Real-time notifications via WebSockets
+* PDF/CSV export for reports (MARs, payroll, incidents)
+* Email or SMS reminders for medication and events
+* Cloud storage for resident photos and files
 
-Future upgrades: SSL, user activity logs, and audit trails
+---
 
-🧰 Future Enhancements
-
-Integration with Django REST Framework for mobile access
-
-Real-time notifications via WebSockets
-
-PDF/CSV export for reports (MARs, payroll, incidents)
-
-Email or SMS reminders for medication and events
-
-Cloud storage for resident photos and files
-
-📈 Benefits
+## 📈 Benefits
 
 ✅ Reliable digital records accessible anytime
 ✅ Increased task efficiency
 ✅ Reduced paperwork and manual errors
 ✅ Improved data security and accountability
 
-🚧 Challenges & Solutions
-Challenge	Proposed Solution
-Transition from paper to system	Staff training sessions
-Data security & privacy	Implement Django authentication and encrypted storage
-Learning curve for staff	Simple, intuitive UI design
-🧩 Development Roadmap
+---
 
- Week 1: Project setup and base templates
+## 🚧 Challenges & Solutions
 
- Week 2: Models, Admin, CRUD operations
+| Challenge                       | Proposed Solution                                     |
+| ------------------------------- | ----------------------------------------------------- |
+| Transition from paper to system | Staff training sessions                               |
+| Data security & privacy         | Implement Django authentication and encrypted storage |
+| Learning curve for staff        | Simple, intuitive UI design                           |
 
- Week 3: Core functionality (records, reminders, events)
+---
 
- Week 4: Authentication & Payroll
+## 🧩 Development Roadmap
 
- Week 5: UI polish, testing, and deployment
+* [x] Week 1: Project setup and base templates
+* [x] Week 2: Models, Admin, CRUD operations
+* [x] Week 3: Core functionality (records, reminders, events)
+* [x] Week 4: Authentication & Payroll
+* [ ] Week 5: UI polish, testing, and deployment
 
-💻 Tech Stack
+---
 
-Backend: Django (Python)
-Frontend: HTML5, CSS3, Bootstrap
-Database: SQLite / PostgreSQL
-Version Control: Git & GitHub
-Deployment: Render / Railway
+## 💻 Tech Stack
 
-🧑‍💻 Author
+**Backend:** Django (Python)
+**Frontend:** HTML5, CSS3, Bootstrap
+**Database:** SQLite / PostgreSQL
+**Version Control:** Git & GitHub
+**Deployment:** Render / Railway
 
-Emmanuel Kipchumba Koech
+---
+
+## 🧑‍💻 Author
+
+**Emmanuel Kipchumba Koech**
 Computer Science Graduate | ALX Software Engineer | Cybersecurity Enthusiast
-🔗 GitHub Profile
+🔗 [GitHub Profile](https://github.com/Emmanuel-K0ech)
 
-📜 License
+---
 
-This project is licensed under the MIT License
-.
+## 📜 License
 
-🙌 Acknowledgments
+This project is licensed under the [MIT License](LICENSE).
 
-Django Documentation
+---
 
-Corey Schafer’s Django Tutorials
+## 🙌 Acknowledgments
 
-Traversy Media Django Crash Course
+* [Django Documentation](https://docs.djangoproject.com/)
+* [Corey Schafer’s Django Tutorials](https://www.youtube.com/@coreyms)
+* [Traversy Media Django Crash Course](https://www.youtube.com/@TraversyMedia)
+
+---
+
+> “Digitizing care homes — because compassionate care deserves efficient systems.”
+
+```
