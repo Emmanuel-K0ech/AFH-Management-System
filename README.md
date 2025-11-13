@@ -1,5 +1,4 @@
 
-```markdown
 # 🏠 Adult Home Management System
 
 ## 📘 Overview
